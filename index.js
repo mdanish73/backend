@@ -12,7 +12,7 @@ app.get("/", (req, res)=>{
     res.send("Hi there");
 })
 
-mongoose.connect('mongodb+srv://mdanish73:Danish-73@students.x5aq73n.mongodb.net/students?retryWrites=true&w=majority').then((res) => {
+mongoose.connect('mongodb+srv://mdanish73:Danish-73@students.x5aq73n.mongodb.net/?retryWrites=true&w=majority').then((res) => {
     console.log("Database connection established");
 }).catch((error) => {
     console.error(error.message);
